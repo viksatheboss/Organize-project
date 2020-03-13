@@ -1,0 +1,19 @@
+﻿@model WebShopProjectViewModels.ProductViewModel
+
+
+<tr>
+    <td>@Model.Category.CategoryName</td>
+    <td>@Model.ProductName</td>
+    <td>@Model.NumberInStock</td>
+    <td>@Model.ReleaseDate</td>
+    <td class="text-dark">
+        <a href="/product/view/@Model.ProductId" class="text-primary">@Model.ProductName</a>
+        <br />
+        <span class="badge badge-info">@Model.Category.CategoryName</span>
+    </td>
+    <td>
+        on @Model.ReleaseDate
+    </td>
+    
+
+</tr>

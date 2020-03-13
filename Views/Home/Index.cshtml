@@ -1,0 +1,24 @@
+﻿@model List<WebShopProjectViewModels.ProductViewModel>
+@{ 
+    ViewBag.Title = "Home";
+}
+<div class="row">
+    <div class="col-sm-12">
+        <div class="jumbotron">
+            <h1>Look, Choose, Buy!</h1>
+            <h3>Choose your favourite product.</h3>
+            <p class="lead">Join us and be in touch with the newest articles!</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <table class="table">
+            @foreach(var item in Model)
+            {
+                Html.RenderPartial("Product", item);
+            }
+        </table>
+    </div>
+</div>
